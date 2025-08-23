@@ -82,3 +82,7 @@ def get_audio(texto):
     except Exception as e:
         return jsonify({'error': f'Error al generar el audio: {str(e)}'}), 500
 
+
+@app.route('/')
+def index():
+    return 'Backend activo ✅'
