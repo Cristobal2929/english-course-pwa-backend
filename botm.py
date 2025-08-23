@@ -86,3 +86,7 @@ def get_audio(texto):
 @app.route('/')
 def index():
     return 'Backend activo ✅'
+
+@app.route('/', methods=['GET'])
+def root():
+    return 'Backend activo', 200
